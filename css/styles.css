@@ -1,37 +1,83 @@
-/* цвет ооновного текста */
- #212121
-
-/* цвет вторинного текста */
-#757575
-
-/* акцент */
-#2196F3
-
-/* белый */
-
-#FFFFFF
-
-
 
 :root {
+    /* fonts */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+   
+    /* text colors */
+
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
     --primary-white-color: #ffffff;
+    --dark-color: #000000;
+
+    /* bg colors */
+    --white-bg-cl: #FFFFFF;
+    --light-bg-cl: #F5F4FA;
+    --dark-bg-cl: #2F303A;
+   
+    
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: var(--primary-white-color);
+    font-family: var(--main-font);
     color: var(--primary-text-color);
     
+}
 
+/* reset styles */
+
+.list {
+    list-style: none;
+
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+
+  
+    }
+
+     /* header section */
+
+.header-link, .header-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+ 
+.header-link:hover,
+.header-link:focus, 
+.header-contacts:hover, 
+.header-contacts:focus {
+    color: var(--accent-color);
+
+}
+
+.header-link-current, 
+.header-email-current {
+    color: var(--accent-color)
+
+}
+
+.phone {
+    color: #757575;
 }
 
 .logo {
+    color: var(--accent-color);
 
 }
-.site-nav {
 
+.accent-logo-header {
+    color: var(--dark-color);
 }
 
+.hero {
+    background-color: var(--dark-bg-cl);
+
+}
