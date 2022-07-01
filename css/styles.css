@@ -1,20 +1,37 @@
-< !-- цвет основного текста --> #212121
+/* цвет ооновного текста */
+ #212121
 
-< !-- цвет вторинного текста -->
+/* цвет вторинного текста */
 #757575
-< !-- акцент -->
+
+/* акцент */
 #2196F3
-< !-- белый -->
+
+/* белый */
+
 #FFFFFF
 
-body {
-    color: #212121;
-    font-family: Roboto;
-    
+
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    
+
+}
+
 .logo {
 
 }
 .site-nav {
 
 }
+
